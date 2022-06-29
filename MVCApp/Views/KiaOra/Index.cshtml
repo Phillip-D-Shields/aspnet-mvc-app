@@ -1,0 +1,16 @@
+﻿@model List<MVCApp.Models.DogViewModel>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>g'day bro</h2>
+<p>this is the index page of the kia ora controller</p>
+<ul>
+    @foreach (var dog in Model)
+    {
+        <li>name: @dog.Name, age: @dog.Age</li>
+    }
+</ul>
+
